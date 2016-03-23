@@ -1,0 +1,17 @@
+<template>
+  <require from="styles/main.css"></require>
+  <header>
+    <img src="Images/JackFrostStudiosLogo.png">
+    <h1>Jack Frost Studios - Circuit breaker example</h1>
+  </header>
+  <section id="outputContainer">
+    <div class="outputItem">
+      <button type="button" click.trigger="requestDataNoCircuitBreaker()">Request data with no circuit breaker</button>
+      <textarea id="noCircuitBreakerTextArea" value.bind="noCircuitBreakerOutput"></textarea>
+    </div>
+    <div class="outputItem">
+      <button type="button" click.trigger="requestDataWithCircuitBreaker()">Request data with circuit breaker</button>
+      <textarea id="withCircuitBreakerTextArea" value.bind="withCircuitBreakerOutput"></textarea>
+    </div>
+  </section>
+</template>
